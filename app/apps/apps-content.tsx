@@ -26,12 +26,13 @@ const liveApps = [
 ]
 
 const comingSoonApps = [
-  { name: 'Team Roping', description: 'Header-heeler matching, practice scheduling, jackpot management, and results tracking for the fastest-growing discipline in rodeo. Find your perfect partner. Track your progress. Win more money.', accentColor: '#4ade80' },
-  { name: 'Breakaway', description: 'Results tracking, event calendars, and community features built specifically for breakaway ropers at every level — from high school rodeo to the NFR.', accentColor: '#f472b6' },
-  { name: 'Ranch Rodeo', description: 'Team management, event coordination, scoring tools, and ranch-to-rodeo connections for ranch rodeo crews who take pride in real cowboy work.', accentColor: '#fb923c' },
-  { name: 'Steer Wrestling', description: 'Run analysis, hazing coordination, competition tracking, and stock data for bulldoggers who take their craft as seriously as any athlete in any sport.', accentColor: '#a78bfa' },
-  { name: 'Saddle Bronc', description: 'Scoring breakdowns, stock data, draw analysis, and training insights for saddle bronc riders chasing that perfect ride — from summer rodeos to the NFR.', accentColor: '#38bdf8' },
-  { name: 'Bareback', description: 'Draw-out alerts, mark-out analysis, fitness tracking, and community tools for bareback riders who refuse to be an afterthought in rodeo technology.', accentColor: '#f87171' },
+  { name: 'teamrope.pro', description: 'Header-heeler matching, practice scheduling, jackpot management, and results tracking for team ropers.', accentColor: '#4ade80' },
+  { name: 'breakawayroping.pro', description: 'Results tracking, event calendars, and community features built specifically for breakaway ropers at every level.', accentColor: '#f472b6' },
+  { name: 'saddlebronc.pro', description: 'Scoring breakdowns, stock data, draw analysis, and training insights for saddle bronc riders.', accentColor: '#38bdf8' },
+  { name: 'barebackbronc.pro', description: 'Draw alerts, mark-out analysis, fitness tracking, and community tools for bareback riders.', accentColor: '#f87171' },
+  { name: 'bulldogging.pro', description: 'Run analysis, hazing coordination, competition tracking, and stock data for steer wrestlers.', accentColor: '#a78bfa' },
+  { name: 'tiedown.pro', description: 'Competition tracking, practice tools, event information, and performance insights for tie-down ropers.', accentColor: '#e6c97f' },
+  { name: 'ranchrodeo.pro', description: 'Team management, event coordination, scoring tools, and ranch-to-rodeo connections for ranch rodeo crews.', accentColor: '#fb923c' },
 ]
 
 export default function AppsContent() {
