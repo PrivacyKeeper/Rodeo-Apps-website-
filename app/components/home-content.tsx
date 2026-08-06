@@ -30,14 +30,49 @@ const featuredApps = [
   },
 ]
 
-const comingSoonApps = [
-  { name: 'teamrope.pro', description: 'Header-heeler matching, practice scheduling, jackpot management, and results tracking for team ropers.', accentColor: '#4ade80' },
-  { name: 'breakawayroping.pro', description: 'Results tracking, event calendars, and community features built specifically for breakaway ropers at every level.', accentColor: '#f472b6' },
-  { name: 'saddlebronc.pro', description: 'Scoring breakdowns, stock data, draw analysis, and training insights for saddle bronc riders.', accentColor: '#38bdf8' },
-  { name: 'barebackbronc.pro', description: 'Draw alerts, mark-out analysis, fitness tracking, and community tools for bareback riders.', accentColor: '#f87171' },
-  { name: 'bulldogging.pro', description: 'Run analysis, hazing coordination, competition tracking, and stock data for steer wrestlers.', accentColor: '#a78bfa' },
-  { name: 'tiedown.pro', description: 'Competition tracking, practice tools, event information, and performance insights for tie-down ropers.', accentColor: '#e6c97f' },
-  { name: 'ranchrodeo.pro', description: 'Team management, event coordination, scoring tools, and ranch-to-rodeo connections for ranch rodeo crews.', accentColor: '#fb923c' },
+const siteLiveApps = [
+  {
+    name: 'breakawayroping.pro',
+    description: 'The fastest-growing event in rodeo, and it has never had a system of record. Entries, calf draws, divisional payouts, a practice log that stays out of official results, and the equipment check that stops you losing a run to your string.',
+    accentColor: '#f472b6',
+    href: 'https://www.breakawayroping.pro/',
+  },
+  {
+    name: 'teamrope.pro',
+    description: 'Built around the number, because the number is the whole sport. Partner matching that respects your classification, entry eligibility checked before you pay, steer history, and both ends of every run.',
+    accentColor: '#4ade80',
+    href: 'https://www.teamrope.pro/',
+  },
+  {
+    name: 'tiedown.pro',
+    description: 'You were not just an 8.4. Every run split into segments — catch, dismount, down the rope, flank, tie — plus how much of it belonged to your horse, and a six-second hold timer that mimics the judge.',
+    accentColor: '#e2701f',
+    href: 'https://www.tiedown.pro/',
+  },
+  {
+    name: 'saddlebronc.pro',
+    description: 'Half your score belongs to an animal you do not own. Draw analysis with every recorded trip on the horse you drew, buck patterns, buck-off rates, and contractor tools for the people who own the data.',
+    accentColor: '#c9a227',
+    href: 'https://www.saddlebronc.pro/',
+  },
+  {
+    name: 'barebackbronc.pro',
+    description: 'Rigging spec checking before a chute judge does it for you, wither profiles and rigging fit notes on every horse, and the injury and conditioning tracking that decides how long a career lasts.',
+    accentColor: '#cc2936',
+    href: 'https://www.barebackbronc.pro/',
+  },
+  {
+    name: 'bulldogging.pro',
+    description: 'The only event where you cannot compete alone. Hazer boards and credit, horse sharing and mount money on a ledger you both trust, steer history, and run segments.',
+    accentColor: '#d9a441',
+    href: 'https://www.bulldogging.pro/',
+  },
+  {
+    name: 'ranchrodeo.pro',
+    description: 'Placings become points the moment the last team runs, with live standings straight to the arena screen. Card builder, team rosters with a role per event, and working cowboy card tracking.',
+    accentColor: '#b3402f',
+    href: 'https://www.ranchrodeo.pro/',
+  },
 ]
 
 export default function HomeContent() {
@@ -179,12 +214,12 @@ export default function HomeContent() {
       <section className="py-20 sm:py-28 bg-[#0a1118]">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           <AnimatedSection className="mb-12">
-            <SectionBadge>Under Development</SectionBadge>
+            <SectionBadge>Websites Live</SectionBadge>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-white tracking-tight mt-5 mb-4">
-              Apps in Development
+              Sites Live Now. Apps In Build.
             </h2>
             <p className="text-[#b8c5d3] text-lg max-w-2xl leading-relaxed">
-              We\'re building the complete rodeo ecosystem — one discipline at a time. Each app gets the same obsessive attention to detail, built alongside the athletes and organizers who know their event best.
+              Seven more disciplines, each with a live website today — rules, formats, and what the app will do. The apps themselves are in build behind them, one discipline at a time, alongside the athletes and organizers who know their event best.
             </p>
             <Link
               href="/apps"
@@ -196,13 +231,14 @@ export default function HomeContent() {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {comingSoonApps?.map((app: any, i: number) => (
+            {siteLiveApps?.map((app: any, i: number) => (
               <AppCard
                 key={app?.name ?? i}
                 name={app?.name ?? ''}
                 description={app?.description ?? ''}
                 accentColor={app?.accentColor ?? '#d8b15e'}
                 status="coming-soon"
+                primaryAction={{ label: 'Visit Website', href: app?.href ?? '#', icon: 'external' as const }}
                 index={i}
               />
             ))}
