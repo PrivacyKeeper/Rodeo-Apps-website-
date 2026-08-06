@@ -237,8 +237,9 @@ export default function HomeContent() {
                 name={app?.name ?? ''}
                 description={app?.description ?? ''}
                 accentColor={app?.accentColor ?? '#d8b15e'}
-                status="coming-soon"
-                primaryAction={{ label: 'Visit Website', href: app?.href ?? '#', icon: 'external' as const }}
+                status="live"
+                appStatusLabel="App Coming Soon"
+                primaryAction={{ label: 'Visit Site →', href: app?.href ?? '#', icon: 'external' as const }}
                 index={i}
               />
             ))}
@@ -258,9 +259,9 @@ export default function HomeContent() {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { value: 8, suffix: '+', label: 'Rodeo Disciplines', icon: Target },
-              { value: 2, suffix: '', label: 'Live Apps', icon: Zap },
-              { value: 7, suffix: '', label: 'Apps in Development', icon: TrendingUp },
+              { value: 7, suffix: '', label: 'Rodeo Disciplines', icon: Target },
+              { value: 7, suffix: '', label: 'Live Sites', icon: Zap },
+              { value: 2, suffix: '', label: 'Apps in Development', icon: TrendingUp },
               { value: 1, suffix: '', label: 'Unified Platform', icon: Shield },
             ]?.map((stat: any, i: number) => (
               <AnimatedSection key={stat?.label ?? i} delay={i * 0.1}>

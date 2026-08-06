@@ -129,8 +129,9 @@ export default function AppsContent() {
                 name={app?.name ?? ''}
                 description={app?.description ?? ''}
                 accentColor={app?.accentColor ?? '#d8b15e'}
-                status="coming-soon"
-                primaryAction={{ label: 'Visit Website', href: app?.href ?? '#', icon: 'external' as const }}
+                status="live"
+                appStatusLabel="App Coming Soon"
+                primaryAction={{ label: 'Visit Site →', href: app?.href ?? '#', icon: 'external' as const }}
                 index={i}
               />
             ))}
