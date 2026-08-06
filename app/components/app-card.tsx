@@ -10,6 +10,8 @@ interface AppCardProps {
   logoSrc?: string
   accentColor: string
   status: 'live' | 'coming-soon'
+  statusLabel?: string
+  appStatusLabel?: string
   primaryAction?: {
     label: string
     href: string
@@ -28,6 +30,8 @@ export default function AppCard({
   logoSrc,
   accentColor,
   status,
+  statusLabel,
+  appStatusLabel,
   primaryAction,
   secondaryAction,
   index = 0,
@@ -68,9 +72,18 @@ export default function AppCard({
             >
               {name}
             </h3>
-            {status === 'coming-soon' && (
+            <span
+              className={
+                status === 'live'
+                  ? 'px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#4ade80] bg-[#4ade80]/10'
+                  : 'px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#d8b15e] bg-[#d8b15e]/10'
+              }
+            >
+              {statusLabel ?? (status === 'live' ? 'Live' : 'Coming Soon')}
+            </span>
+            {appStatusLabel && (
               <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#d8b15e] bg-[#d8b15e]/10">
-                Coming Soon
+                {appStatusLabel}
               </span>
             )}
           </div>
