@@ -21,6 +21,10 @@ interface AppCardProps {
     label: string
     href: string
   }
+  tertiaryAction?: {
+    label: string
+    href: string
+  }
   index?: number
 }
 
@@ -34,6 +38,7 @@ export default function AppCard({
   appStatusLabel,
   primaryAction,
   secondaryAction,
+  tertiaryAction,
   index = 0,
 }: AppCardProps) {
   const IconComponent = primaryAction?.icon === 'download' ? Download : ExternalLink
@@ -91,8 +96,8 @@ export default function AppCard({
         </div>
       </div>
 
-      {(primaryAction || secondaryAction) && (
-        <div className="flex items-center gap-3 mt-5">
+      {(primaryAction || secondaryAction || tertiaryAction) && (
+        <div className="flex flex-wrap items-center gap-3 mt-5">
           {primaryAction && (
             <a
               href={primaryAction?.href}
@@ -112,6 +117,16 @@ export default function AppCard({
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-[#d8b15e]/30 text-[#d8b15e] text-sm font-semibold hover:bg-[#d8b15e]/10 transition-colors"
             >
               {secondaryAction?.label}
+            </a>
+          )}
+          {tertiaryAction && (
+            <a
+              href={tertiaryAction?.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-[#d8b15e]/30 text-[#d8b15e] text-sm font-semibold hover:bg-[#d8b15e]/10 transition-colors"
+            >
+              {tertiaryAction?.label}
             </a>
           )}
         </div>

@@ -17,16 +17,16 @@ const featuredApps = [
     logoSrc: '/images/barrelconnect-logo.png',
     accentColor: '#85d5ff',
     status: 'live' as const,
-    primaryAction: { label: 'App Store', href: 'https://apps.apple.com/us/app/barrelconnect/id6742752498', icon: 'download' as const },
-    secondaryAction: { label: 'Visit Website', href: 'https://www.barrelconnect.pro/' },
+    primaryAction: { label: 'App Store', href: 'https://apps.apple.com/us/app/barrel-connect/id6759174928', icon: 'download' as const },
+    secondaryAction: { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.barrelconnectpro.app' },
+    tertiaryAction: { label: 'BarrelConnect.pro', href: 'https://www.barrelconnect.pro/' },
   },
   {
     name: 'Bullrider.Pro',
     description: 'Purpose-built for the bull riding world. Event coverage, rider rankings, stock contractor data, and community — organized the way bull riders actually need it.',
     logoSrc: '/images/bullrider-logo.png',
     accentColor: '#e6c97f',
-    status: 'live' as const,
-    primaryAction: { label: 'Visit Website', href: 'https://www.bullrider.pro/', icon: 'external' as const },
+    status: 'coming-soon' as const,
   },
 ]
 

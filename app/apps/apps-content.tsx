@@ -12,16 +12,16 @@ const liveApps = [
     logoSrc: '/images/barrelconnect-logo.png',
     accentColor: '#85d5ff',
     status: 'live' as const,
-    primaryAction: { label: 'Download on App Store', href: 'https://apps.apple.com/us/app/barrelconnect/id6742752498', icon: 'download' as const },
-    secondaryAction: { label: 'Visit Website', href: 'https://www.barrelconnect.pro/' },
+    primaryAction: { label: 'App Store', href: 'https://apps.apple.com/us/app/barrel-connect/id6759174928', icon: 'download' as const },
+    secondaryAction: { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.barrelconnectpro.app' },
+    tertiaryAction: { label: 'BarrelConnect.pro', href: 'https://www.barrelconnect.pro/' },
   },
   {
     name: 'Bullrider.Pro',
-    description: 'Purpose-built for the bull riding world. Event coverage, rider rankings, stock contractor data, and community — organized the way bull riders actually need it. From PBR to local jackpots, Bullrider.Pro has it covered.',
+    description: 'Purpose-built for the bull riding world. Event coverage, rider rankings, stock contractor data, and community — organized the way bull riders actually need it. From PBR to local jackpots, Bullrider.Pro is being built to cover it all.',
     logoSrc: '/images/bullrider-logo.png',
     accentColor: '#e6c97f',
-    status: 'live' as const,
-    primaryAction: { label: 'Visit Website', href: 'https://www.bullrider.pro/', icon: 'external' as const },
+    status: 'coming-soon' as const,
   },
 ]
 
@@ -97,7 +97,7 @@ export default function AppsContent() {
       <section className="py-16 sm:py-24 bg-[#0d1520]">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           <AnimatedSection className="mb-10">
-            <SectionBadge>Live Now</SectionBadge>
+            <SectionBadge>Flagship Apps</SectionBadge>
             <h2 className="font-display text-3xl font-bold text-white tracking-tight mt-5">
               Featured Apps
             </h2>
