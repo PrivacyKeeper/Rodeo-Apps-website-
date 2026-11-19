@@ -99,7 +99,7 @@ export default function AboutContent() {
                 We\'re not building one app. We\'re building the platform — the connected ecosystem that every discipline plugs into. Think of it like this: each sport within rodeo gets its own purpose-built app, designed for the unique needs of that discipline. But underneath, they share infrastructure, data, and community features that make the whole greater than the sum of its parts.
               </p>
               <p>
-                When a barrel racer opens BarrelConnect, she sees her world. When a bull rider opens Bullrider.Pro, he sees his. But they\'re all part of the same ecosystem — the same operating system. Results flow across disciplines. Events are discoverable. The rodeo community is finally connected.
+                When a barrel racer opens BarrelConnect, she sees her world. When Bullrider.Pro launches, a bull rider will see his. But they\'re all part of the same ecosystem — the same operating system. Results flow across disciplines. Events are discoverable. The rodeo community is finally connected.
               </p>
             </div>
           </AnimatedSection>
